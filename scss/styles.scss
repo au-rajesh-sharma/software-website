@@ -1,0 +1,187 @@
+/* xtra large text class */
+.xl-text {
+  font-size: 65px;
+}
+
+/* adding bg image, linear gradient overlay to bg img 
+linear-gradient last decimal values change the darkness */
+.header {
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.2), 
+  rgba(0, 0, 0, 0.5)), 
+  url("../images/header-background.jpg") 
+  left center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* vertical decoration line img styling */
+.vertical-decoration {
+  top: 12%;
+  width: 24px;
+}
+
+/* for putting underline */
+.hr-heading {
+  display: inline-block;
+  width: 25rem;
+  height: 0.2rem;
+  margin-top: 0.625rem;
+  border: none;
+  background-color: var(--bs-primary);
+  opacity: 1;
+}
+
+/* on user scroll, navbar transition */
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+/* on user scroll, navbar sticky class opacity */
+.navbar-sticky {
+  opacity: 0.75;
+}
+
+/* customize vertical decoration line img  */
+.details .vertical-decoration {
+  top: 0;
+  left: 0;
+  width: 24px;
+}
+
+/* customize vertical decoration line img  */
+.details-2 .vertical-decoration {
+    top: 5%;
+    right: 0;
+    width: 24px;
+}
+  
+  // define Video Play Button class
+  .video-play-button {
+    position: absolute;//absolute position
+    z-index: 10;//high z-index
+    top: 50%;//to put in middle
+    left: 50%;//to put in middle
+    //align exactly to the middle with transform negative 50%
+    transform: translateX(-50%) translateY(-50%);
+    width: 32px;//btn width
+    height: 44px;//btn height
+    border-radius: 50%;//
+    display: block;//display as block within span in index.html
+    box-sizing: content-box;//to allow paddings
+    padding: 1.125rem 1.25rem 1.125rem 1.75rem;//top right bottom left
+    cursor: pointer;
+  }
+  
+  //using :before psudeo selector for animation effects
+  .video-play-button:before {
+    content: '';//empty content
+    position: absolute;//absolute position
+    z-index: 0;//z-index 0
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 76px;//increase width
+    height: 76px;//increase height
+    border-radius: 50%;
+    display: block;
+    background: var(--bs-primary);//asign bg color
+    cursor: pointer;
+    //add animation to :before. 
+    //'pulse-border' is the name of @key-frames defined later, 
+    //length: 1500ms, 
+    //effect: ease-in-out
+    //duration: infinite
+    animation: pulse-border 1500ms ease-in-out infinite;
+  }
+  
+  //using :after psudeo selector for animation effects
+  .video-play-button:after {
+    content: '';//empty content
+    position: absolute;//absolute position
+    z-index: 1;//z-index 1
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70px;//reduce width slightly to 70
+    height: 70px;//reduce height slightly to 70
+    border-radius: 50%;
+    display: block;
+    background: var(--bs-primary);
+    cursor: pointer;
+    transition: all 200ms;//transition time 200ms
+  }
+  
+  //it's the span within the video play btn
+  //for creating a triangle, just with border properties
+  .video-play-button span {
+    position: relative;
+    display: block;
+    z-index: 3;//make it on top of :before and :after
+    top: 6px;//position top within video play btn
+    left: 4px;//position left within video play btn
+    width: 0;
+    height: 0;
+    // Draw white traingle, 
+    //changing these values will change triangle shape 
+    //alternatively, we could put font awesome icon
+    border-left: 26px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+  }
+  
+  //define key frames for pulse animation effect
+  @keyframes pulse-border {
+    0% {//start
+      transform: translateX(-50%) translateY(-50%) 
+      translateZ(0) scale(1);//scale should be 1 at start
+      opacity: 1;//fully solid (orange circle)
+    }
+  
+    100% {//end
+      transform: translateX(-50%) translateY(-50%) 
+      translateZ(0) scale(1.5);//scale to 1.5 at the end
+      opacity: 0;//fully transparent circle outer edge
+    }
+  }
+  
+  //size and placement of video modal dialog
+  .video-modal .modal-dialog {
+    max-width: 1150px;
+    margin-top: 20px;
+  }
+  
+  //size and placement of project modal dialog
+  .project-modals .modal-dialog {
+    max-width: 1150px;
+    margin-top: 130px;
+  }
+  
+  // styling for small screens
+  @media (max-width: 992px) {
+    //reduce xl-text size
+    .xl-text {
+      font-size: 50px;
+    }
+  
+    .header {
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.9)),
+      url('../images/header-background.jpg') 
+      //make header image center center 
+      center center no-repeat;
+    }
+  
+    // text under video - remove padding, align center
+    .video-points {
+      padding: 0 !important;
+      text-align: center;
+    }
+  
+    //on col-lg-4 - make mb 20px
+    .video-points .col-lg-4 {
+      margin-bottom: 20px;
+    }
+  }
+  

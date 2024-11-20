@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon3.png" />
+    <title>Welcome To RajeshInfoTech</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top 
+      navbar-dark">
+      <div class="container">
+       
+        <a class="navbar-brand" href="#" style="text-decoration: none;">
+            <img src="images/logo.png" alt="" width="40" />
+            <h3 class="text-primary fw-bold"><i>RajeshInfoTech</i></h3>
+        </a>
+       
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item fw-bold">
+              <a class="nav-link" aria-current="page" href="#"><i>Home</i></a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#solutions"><i>Solutions</i></a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#details"><i>Details</i></a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#expertise"><i>Expertise</i></a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#pricing"><i>Pricing</i></a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#projects"><i>Projects</i></a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <!-- fa-stack to stack facebook icon inside circle icon
+             first circle size 2x, then inside facebook size 1x
+             _blank - open in new tab -->
+            <span class="fa-stack">
+              <a href="https://facebook.com" target="_blank">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="https://twitter.com" target="_blank">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header / hero. position relative to make content absolute -->
+    <header class="header position-relative">
+      <!-- img of left vertical line. d-none by default (sm scr) -->
+      <img
+        src="images/vertical-decoration-left.svg"
+        alt=""
+        class="vertical-decoration position-absolute 
+          d-none d-md-block"
+      />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 pt-5">
+            <!-- xl-text is custom class -->
+            <h1 class="xl-text mt-5">
+              Software Solutions For
+              <!-- using replace-me function (to revolve words), 
+               from replaceme.min.js, controlled by script.js -->
+              <!-- <i> for italics -->
+              <i>
+                <span class="text-primary fw-bold replace-me"
+                  >Small Business, Startups, Enterprise</span>
+              </i>
+            </h1>
+          
+            <p class="lead">
+              Boost your business with cutting-edge software solutions tailored
+              to the needs of modern enterprises.
+            </p>
+            <a href="#solutions" class="btn btn-primary text-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Partners, overflow-hidden, we will cut partners
+     moving to smaller screens -->
+    <section class="partners overflow-hidden">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <h6 class="text-center mb-4 text-uppercase fw-bold lead"><i>Our Partners</i></h6>
+            <div
+              class="d-flex justify-content-center 
+                align-items-center text-center">
+              <div>
+                <img src="images/partner-logo-1.png" alt="" 
+                class="mx-4" />
+              </div>
+              <!-- d-none default, on sm screen, show block -->
+              <div class="d-none d-sm-block">
+                <img src="images/partner-logo-2.png" alt="" 
+                class="mx-4" />
+              <!-- d-none default, on md screen, show block -->
+              </div>
+              <div class="d-none d-md-block">
+                <img src="images/partner-logo-3.png" alt="" 
+                class="mx-4" />
+              </div>
+              <!-- d-none default, on lg screen, show block -->
+              <div class="d-none d-lg-block">
+                <img src="images/partner-logo-4.png" alt="" 
+                class="mx-4" />
+              </div>
+              <!-- d-none default, on lg screen, show block -->
+              <div class="d-none d-lg-block"></div>
+                <img src="images/partner-logo-5.png" alt="" class="mx-4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Area -->
+    <section id="contact" class="contact pt-8">
+      <div class="container">
+        <!-- row of 2 cols (left & right) -->
+        <div class="row">
+          <!-- left col -->
+          <div class="col-md-6">
+            <h2 class="fw-bold">Get More Information</h2>
+            <!-- hr for underline -->
+            <!-- <hr class="text-primary" /> -->
+            <hr class="hr-heading" />
+            <p class="lead">
+              We provide innovative software solutions that empower businesses to
+              thrive in the digital era.
+            </p>
+            <!-- unstyled list, line height - lg -->
+            <ul class="list-unstyled lh-lg">
+              <!-- d-flex to align center. check icon mx-3 -->
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Customized Solutions: </strong> Our solutions are designed
+                  to meet your specific business needs, ensuring maximum efficiency
+                  and productivity.
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Seamless Integration:</strong> We seamlessly integrate our
+                  software with your existing systems, minimizing disruptions and
+                  optimizing workflows.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- right col -->
+          <div class="col-md-5 offset-md-1">
+            <form name="contact" netlify>
+              <div class="mb-4">
+                <input type="text" class="form-control 
+                  bg-secondary" name="name" placeholder="Enter name">
+              </div>
+              <div class="mb-4">
+                <input type="email" class="form-control 
+                  bg-secondary" name="email" placeholder="Enter email">
+              </div>
+              <div class="mb-4">
+                <input type="text" class="form-control 
+                  bg-secondary" name="phone" placeholder="Enter phone">
+              </div>
+              <div class="mb-4">
+                <!-- dropdown select -->
+                <select name="interested" id="interested" 
+                  class="form-control bg-secondary">
+                  <!-- first option is title, no value -->
+                  <option>Interested In...</option>
+
+                  <option value="erp">ERP Solution</option>
+                  <option value="crm">CRM Solution</option>
+                  <option value="cms">CMS Solution</option>
+                  <option value="sfa">SFA Solution</option>
+                </select>
+              </div>
+              <!-- checkbox -->
+              <div class="mb-4 form-check">
+                <input type="checkbox" id="agree-check"
+                 name="agree" />
+                <label for="agree-check" 
+                  class="form-check-label">
+                  I agree to the <a href="privacy.html">Privacy Policy</a>
+                </label>
+              </div>
+              <div class="d-grid gap-2">
+                <input type="submit" value="Submit" 
+                  class="btn btn-primary text-white" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions, id for navigation -->
+    <section id="solutions" class="solutions pt-7">
+      <div class="container">
+        <!-- row for badge and heading -->
+        <div class="row mb-4">
+          <div class="col-md-6 offset-md-3 d-flex flex-column 
+            align-items-center text-center">
+            <!-- badge -->
+            <h5><span class="badge bg-primary rounded-0 text-uppercase">
+              Solutions
+            </span></h5>
+            <h2 class="fw-bold">
+              We Provide Software Solutions For Business Acceleration
+            </h2>
+          </div>
+        </div>
+        <!-- Solutions Row 1 -->
+        <div class="row">
+          <!-- row with 2 cols of cards -->
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="images/solution-1.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ERP Software Solutions</h5>
+                <p class="card-text">
+                  Our ERP software solution streamlines your business processes and
+                  enhances operational efficiency. With integrated modules for
+                  finance, human resources, and more, you can make data-driven
+                  decisions.
+                </p>
+                <!-- badge -->
+                <div class="badge bg-primary p-2 text-uppercase">
+                  Management
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="images/solution-2.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">CRM Software Solutions</h5>
+                <p class="card-text">
+                  Our CRM software solution helps you build stronger customer
+                  relationships and drive sales growth. Manage leads, track
+                  interactions, and deliver personalized experiences to maximize
+                  customer satisfaction and loyalty.
+                </p>
+                <div class="badge bg-dark p-2 text-uppercase">
+                  Marketing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Solutions Row 2 -->
+         <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="images/solution-3.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">SFA Software Solutions</h5>
+                <p class="card-text">
+                  Our SFA software solution empowers your sales team with the tools
+              they need to drive revenue growth. Streamline sales processes,
+              track performance, and enhance collaboration to close deals
+              faster.
+                </p>
+                <div class="badge bg-primary p-2 text-uppercase">
+                  Management
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card bg-secondary">
+              <img src="images/solution-4.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">WMS Software Solutions</h5>
+                <p class="card-text">
+                  Our WMS software solution optimizes your warehouse operations and
+              improves inventory management. Gain real-time visibility, automate
+              processes, and reduce costs to ensure efficient logistics.
+                </p>
+                <div class="badge bg-dark p-2 text-uppercase">
+                  Marketing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details 1, id for navigation, position relative to
+      place orange line img as absolute -->
+    <section id="details" class="details pt-6 position-relative">
+      <div class="container">
+        <div class="row pt-5">
+          <!-- left col with text-->
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Evaluation & Deployment</h2>
+            <!-- hr for underline -->
+            <hr class="hr-heading" />
+            <p>
+              We offer comprehensive evaluation and deployment services to ensure a smooth and successful implementation of our software solutions.
+            </p>
+            <!-- unstyled list, line height lg -->
+            <ul class="list-unstyled lh-lg">
+              <!-- d-flex align icon & text center -->
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i> 
+                <div>
+                  <strong>Customized solutions: </strong>We tailor our solutions to align with your unique business needs
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Seamless Integration:</strong> Our team ensures smooth integration of the software into your existing infrastructure, minimizing disruptions
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- right col with img -->
+          <div class="col-lg-6">
+            <img src="images/details-1.jpg" alt="" 
+              class="img-fluid rounded-2">
+          </div>
+        </div>
+      </div>
+      <!-- img for vertical line left, d-none default, d-md-block -->
+      <img src="images/vertical-decoration-left.svg" alt="" 
+        class="vertical-decoration position-absolute 
+          d-none d-md-block">
+    </section>
+
+    <!-- Details 2, id for navigation -->
+    <section class="details-2 my-5 position-relative">
+      <div class="container">
+        <div class="row pt-5">
+          <!-- left col with image -->
+          <div class="col-lg-6">
+            <img src="images/details-2.jpg" alt="" 
+              class="img-fluid rounded-2">
+          </div>
+          <!-- right col with text -->
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Maintenance & Support</h2>
+            <!-- hr for underline -->
+            <hr class="hr-heading" />
+            <p>
+              We provide comprehensive maintenance and support services to ensure the smooth and uninterrupted operation of your software solutions.  <a href="#">Learn more about our support services.</a>
+            </p>
+            <!-- unstyled list, line height lg -->
+            <ul class="list-unstyled lh-lg">
+              <!-- d-flex to align icon & text to center -->
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Proactive Maintenance:</strong> We proactively monitor and maintain your software solutions to prevent issues and optimize performance.
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check text-primary mx-3"></i>
+                <div>
+                  <strong>Timely Updates:</strong> We ensure your software is up to date with the latest features, security patches, and enhancements.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- img for vertical line right, d-none default, d-md-block -->
+      <img src="images/vertical-decoration-right.svg" alt="" 
+        class="vertical-decoration position-absolute 
+          d-none d-md-block">
+    </section>
+
+    <!-- Expertise section, id for navigation -->
+    <section id="expertise" class="expertise bg-secondary 
+      pt-lg-7 my-6">
+      <div class="container">
+        <!-- row for badge, heading and text -->
+        <div class="row mb-3">
+          <div class="col-md-6 offset-md-3 d-flex flex-column 
+            align-items-center text-center">
+            <h5>
+              <span class="badge bg-primary rounded-0 text-uppercase">Expertise</span>
+            </h5>
+            <h2 class="fw-bold">Expertise Strong Points</h2>
+            <p>
+              We take pride in our expertise. With years of experience and a
+              dedicated team, we deliver exceptional software solutions tailored to
+              your needs. Our strong points include:
+            </p>
+          </div>
+        </div>
+        <!-- Expertise Row 1, 4 cols of cards, bg transparent,
+         center -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 
+              text-center mb-3">
+              <!-- class card-image (but icon) -->
+              <div class="card-image">
+                <i class="fas fa-lightbulb fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Flexible Services</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 
+              text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-desktop fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Great Design</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-wifi fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Easy To Use</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-cog fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Smart Options</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expertise Row 2 -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-glasses fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Advanced Tech</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-graduation-cap fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Good Expertise</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-chart-bar fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Detailed Reports</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-transparent border-0 text-center mb-3">
+              <div class="card-image">
+                <i class="fas fa-cloud fa-5x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Cloud Storage</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="video py-5 mb-3">
+      <div class="container">
+        <!-- row for video img -->
+        <div class="row">
+          <!-- col-12, d-flex, align play btn to center -->
+          <div class="col-12 d-flex flex-column 
+            align-items-center">
+            <!-- div - position relative to make its contents absolute -->
+            <div class="position-relative">
+              <!-- initial img for video screen, 
+               fluid - take entire col -->
+              <img src="images/video-preview.jpg" alt="" 
+                class="img-fluid">
+              <!-- open video as modal, target name #videoModal
+                src is youttube video link 
+                video modal play is implemented in script.js -->
+              <a class="video-btn" data-bs-toggle="modal" 
+                data-bs-target="#videoModal" 
+                data-bs-src="https://www.youtube.com/embed/_WQ_VV4pXPc">
+                <!-- youttube video above: 
+                 https://www.youtube.com/watch?v=_WQ_VV4pXPc -->
+                <!-- traversey video 
+                 "https://www.youtube.com/embed/u72H_zZzkcw"> -->
+                
+                <!-- video play btn at the center
+                  video btn style & transformation done in 
+                  video-play-button class in styles.scss-->
+                <span class="video-play-button">
+                  
+                  <!-- empty span inside video-play-button. 
+                   it will contain white triangle, created in
+                   styles.scss --> 
+                  <span></span>
+
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- below the video, row with 3 cols -->
+        <div class="row video-points px-6 mt-5">
+          <!-- col 1 -->
+          <div class="col-lg-4">
+            <h4 class="fw-bold">10 Years Of Experience</h4>
+            <p>
+              With over 10 years of experience, we have gained valuable insights and
+          expertise to deliver high-quality software solutions
+            </p>
+          </div>
+          <!-- col 2 -->
+          <div class="col-lg-4">
+            <h4 class="fw-bold">Enduring Partnerships</h4>
+            <p>
+              We believe in building enduring partnerships with our clients. We
+              establish long-term relationships based on trust
+            </p>
+          </div>
+          <!-- col 3 -->
+          <div class="col-lg-4">
+            <h4 class="fw-bold">Skilled Capable Team</h4>
+            <p>
+              Our team consists of skilled and capable professionals who are
+              passionate about delivering excellence
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal 
+       we have to put video play as modal iframe, 
+       and add a few custom java script events & handlers, 
+       that will deal with modal opening / closing
+       otherwise when we close the modal, 
+       the video will keep playing -->
+      <div class="video-modal">
+        <div id="videoModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="ratio ratio-16x9">
+                <iframe frameborder="0" 
+                  class="embed-responsive-item" 
+                  id="video">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing, id for navigation -->
+    <section id="pricing" class="pricing">
+      <div class="container pt-7">
+        <!-- row with badge and heading, offset, center -->
+        <div class="row mb-4">
+          <div class="col-md-6 offset-md-3 d-flex flex-column 
+            align-items-center text-center">
+            <!-- badge -->
+            <h5><span class="badge bg-primary rounded-0 
+                text-uppercase">
+              Pricing
+            </span></h5>
+            <h2 class="fw-bold">
+              Flexible Pricing Options
+            </h2>
+          </div>
+        </div>
+
+        <!-- row with 3 pricing cards, 3  narrow cols, 
+         justify-center -->
+        <div class="row justify-content-center">
+          <!-- Pricing card, Col 1 -->
+          <div class="col-md-4">
+            <div class="card bg-secondary text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$99</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Standard
+                </h4>
+                <p>Our standard plan offers comprehensive features
+                  for your software needs</p>
+                  <!-- unstyled list, line height lg,  -->
+                  <ul class="list-unstyled lh-lg mt-5">
+                    <li class="text-uppercase fs-5 fw-bold">
+                      Subscribers List
+                    </li>
+                    <li class="text-uppercase fs-5 fw-bold">
+                      User Admin Control
+                    </li>
+                  </ul>
+                   <!-- link btn to contact form -->
+                  <a href="#contact" 
+                    class="btn btn-primary text-white mt-6 
+                    fw-bold">Inquire
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 2 -->
+          <div class="col-md-4">
+            <div class="card bg-secondary text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$199</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Advanced
+                </h4>
+                <p> Unlock additional enhanced capabilities. Take your software
+                  solutions to the next level</p>
+                  <ul class="list-unstyled lh-lg mt-5">
+                    <li class="text-uppercase fs-5 fw-bold">
+                      Limited Storage Space
+                    </li>
+                    <li class="text-uppercase fs-5 fw-bold">
+                      Free Cloud Storage
+                    </li>
+                  </ul>
+                   <!-- link to contact form -->
+                  <a href="#contact" 
+                    class="btn btn-primary text-white mt-6 
+                    fw-bold">Inquire
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Col 3 -->
+          <div class="col-md-4">
+            <div class="card bg-secondary text-center rounded-0">
+              <div class="card-body">
+                <div class="xl-text fw-bold">$299</div>
+                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
+                  Complete
+                </h4>
+                <p> Our complete pricing plan offers an all-inclusive package with
+                  advanced features</p>
+                  <ul class="list-unstyled lh-lg mt-5">
+                    <li class="text-uppercase fs-5 fw-bold">
+                      Deployment Protocol
+                    </li>
+                    <li class="text-uppercase fs-5 fw-bold">
+                      Premium Support Pack
+                    </li>
+                  </ul>
+                  <!-- link to contact form -->
+                  <a href="#contact" 
+                    class="btn btn-primary text-white mt-6 
+                    fw-bold">Inquire
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects mb-4">
+      <div class="container pt-7">
+        <div class="row mb-5">
+          <!-- col, offset-3, center -->
+          <div class="col-md-6 offset-md-3 d-flex flex-column 
+            align-items-center text-center">
+            <!-- badge -->
+            <h5><span class="badge bg-primary rounded-0 text-uppercase">
+              Projects
+            </span></h5>
+            <h2 class="fw-bold">Project's We Are Proud Of</h2>
+            <p>  We take pride in our successful projects and the value they bring to
+              our clients. With our expertise and dedication, we have delivered
+              exceptional results. Here are some highlights</p>
+          </div>
+        </div>
+        <!-- Projects Row 1 -->
+        <div class="row">
+          <!-- each row with 3 projects cards-->
+          <div class="col-md-4 mb-4">
+            <div class="card bg-secondary">
+              <!-- img link to open the modal -->
+              <a data-bs-toggle="modal" data-bs-target="#modal1">
+                <img src="images/project-1.jpg" alt="" 
+                  class="card-img-top">
+                <div class="card-body">
+                  <p>
+                    <strong>Orkla Foods</strong> - Donec bibeum mollis liga sit amet
+                pulvinar sed viverra noris
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card bg-secondary">
+              <a data-bs-toggle="modal" data-bs-target="#modal2">
+                <img src="images/project-2.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <p>
+                    <strong>First Bank</strong> - Donec bibeum mollis liga sit amet
+                    pulvinar sed viverra noris
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card bg-secondary">
+              <a data-bs-toggle="modal" data-bs-target="#modal3">
+                <img src="images/project-3.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <p>
+                    <strong>All Sweets</strong> - Donec bibeum mollis liga sit amet
+                pulvinar sed viverra noris
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Row 2 -->
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card bg-secondary">
+              <a data-bs-toggle="modal" data-bs-target="#modal4">
+                <img src="images/project-4.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <p>
+                    <strong>Fast Courier</strong> - Donec bibeum mollis liga sit
+                amet pulvinar sed viverra noris
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card bg-secondary">
+              <a data-bs-toggle="modal" data-bs-target="#modal5">
+                <img src="images/project-5.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <p>
+                    <strong>Lyra Market</strong> - Donec bibeum mollis liga sit amet
+                pulvinar sed viverra noris
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card bg-secondary">
+              <a data-bs-toggle="modal" data-bs-target="#modal6">
+                <img src="images/project-6.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <p>
+                    <strong>Monday Stores</strong> - Donec bibeum mollis liga sit
+                    amet pulvinar sed viverra
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="project-modals">
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <!-- row with 2 columns -->
+            <div class="row">
+              <!-- ist col for image -->
+              <div class="col-md-6">
+                <img src="images/project-1.jpg" alt="" class="img-fluid">
+              </div>
+              <!-- 2nd col for heading, text, and buttons -->
+              <div class="col-md-6">
+                <h3>Orkla Foods</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <!-- provide btn link to project details -->
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <!-- modal dismiss button -->
+                <button class="btn btn-light" 
+                  data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 2 -->
+       <div id="modal2" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>First Bank</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 3 -->
+       <div id="modal3" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>All Sweets</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 4 -->
+       <div id="modal4" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Fast Courier</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 5 -->
+       <div id="modal5" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Lyra Market</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal 6 -->
+       <div id="modal6" class="modal fade">
+        <div class="modal-dialog modal-lg mt-7">
+          <div class="modal-content bg-secondary p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/project-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3>Monday Stores</h3>
+                <p>
+                  Aliquam at accumsan nibh. Praesent pretium ut tortor ac commodo.
+                  Integer semper quam at rutrum interdum. Mauris eu diam ac urna
+                  laoreet mollis et
+                </p>
+                <p>
+                  Praesent lacus tortor, facilisis non enim eu, luctus semper velit.
+                  Curabitur faucibus diam in lectus.
+                </p>
+                <a href="#" class="btn btn-primary text-white">
+                  Details
+                </a>
+                <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter - subscribe and follow -->
+    <section id="newsletter" class="newsletter my-5">
+      <div class="container">
+        <div class="row mb-4">
+          <!-- col for heading & p, offset, center -->
+          <div class="col-md-6 offset-md-3 d-flex 
+            flex-column align-items-center text-center">
+            <h2 class="fw-bold">Subscribe And Follow</h2>
+            <p>
+              Stay updated with our latest news and announcements. Subscribe to our
+          newsletter and follow us on social media for valuable insights and
+          exciting updates.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- col, offset, center, input group of email & btn -->
+          <div class="col-md-6 offset-md-3 d-flex flex-column 
+            align-items-center text-center">
+            <!-- input group for all content mb 3 -->
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" 
+                placeholder="Enter Email Address" />
+              <button class="btn btn-primary text-white 
+                rounded-0" type="button">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-secondary pt-3">
+      <div class="container">
+        <!-- row with 3 cols -->
+        <div class="row">
+          <!-- col for about -->
+          <div class="col-md-4 my-3 text-center">
+            <h6>About RajeshInfoTech</h6>
+            <!-- underline row -->
+            <hr class="text-primary"/>
+            <p>
+              RajeshInfoTech is a dedicated software solutions company that aims to provide
+              exceptional services to its clients. We are committed to delivering
+              innovative and customized solutions that meet your specific business
+              needs.
+            </p>
+          </div>
+          <!-- col for links as unstyled list -->
+          <div class="col-md-4 my-3 text-center">
+            <h6>Links</h6>
+            <hr class="text-primary"/>
+            <ul class="list-unstyled">
+              <li>
+                Important: <a href="#">Terms & Conditions</a>,
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                Useful: <a href="index.html#expertise">Expertise</a>,
+                <a href="index.html#pricing">Pricing</a>,
+                <a href="index.html#newsletter">Newsletter</a>
+              </li>
+              <li>
+                Menu: <a href="index.html">Home</a>, <a href="index.html#details">Details</a>,
+                <a href="index.html#solutions">Solutions</a>,
+                <a href="index.html#projects">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <!-- col for social icons & contact email link -->
+          <div class="col-md-4">
+            <div class="mb-2">
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-facebook fa-2x text-light mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-twitter fa-2x text-light mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-instagram fa-2x text-light mx-2"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="fab fa-pinterest fa-2x text-light mx-2"></i>
+              </a>
+            </div>
+            <hr class="text-primary"/>
+            <p>
+              We would love to hear from you
+              <a href="mailto:au.rajeshsharma@gmail.com"
+                ><strong>contact@RajeshInfoTech.com.au</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
